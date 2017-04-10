@@ -8,9 +8,9 @@ int bsearch(int a[],int item,int low,int high)
         if(item==a[mid])
             return mid;
         else if(item<a[mid])
-            bsearch(a,item,low,mid-1);
+            bsearch(a,item,low,mid-1);//searh in the left part of the array
         else
-            bsearch(a,item,mid+1,high);
+            bsearch(a,item,mid+1,high);//search in th right part of the array
     }
     else
         return -1;
